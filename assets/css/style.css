@@ -1,0 +1,146 @@
+:root
+{
+    /* Colors */
+    --default: #fff;
+    --primary: #f7f7f7;
+    --secondary: #ee2211;
+    --text: #000;
+
+    /* typograph */
+    --font: 'Arial';
+    --paragraph-size: 20px;
+    --title-large: 64px;
+
+    /* Content */
+    --content-max-size: 1000px;
+}
+
+/* Reset */
+body
+{
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+p, h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
+/* Style Header */
+.header
+{
+    display: grid;
+    justify-items: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.header ul
+{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li a
+{
+    padding: 15px 30px;
+    background-color: var(--default);
+    display: inline-block;
+    margin: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* Style Content */
+.content
+{
+    display: grid;
+    max-width: var(--content-max-size);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.description
+{
+    background-color: var(--default);
+    padding: 40px;
+    display: grid;
+    text-align: right;
+    align-items: center;
+    justify-items: end;
+}
+
+.description p
+{
+    font-size: var(--paragraph-size);
+    line-height: 1.3;
+}
+
+.description a
+{
+    color: var(--default);
+    background-color: var(--secondary);
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.content h2
+{
+    font-size: var(--title-large);
+    text-transform: uppercase;
+    padding: 40px;
+    text-align: right;
+    color: #c6c6c6;
+    align-self: center;
+}
+
+/* Style aside */
+.aside
+{
+    display: grid;
+    background-color: var(--default);
+    padding: 40px;
+    gap: 40px;
+}
+
+.aside-item
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+}
+
+.aside-item p
+{
+    grid-column: 2;
+}
+
+/* Style Footer */
+.footer
+{
+    background-color: var(--default);
+    padding: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
