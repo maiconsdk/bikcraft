@@ -87,6 +87,18 @@ img
     text-align: right;
     align-items: center;
     justify-items: end;
+    position: relative;
+}
+
+.description::before
+{
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: var(--secondary);
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
 .description p
